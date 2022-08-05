@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Project</title>
+    <link rel="stylesheet" href="/src/styles.css">
+</head>
+<body>
+    <header>
+        <a href="./src/timer.html">
+            <p>Timer</p>
+            <img src="/src/assets/timer.svg" alt="">
+        </a>
+        <a href="./index.html">
+            <p>Chronometer</p>
+            <img src="/src/assets/chronometer.svg" alt="">
+        </a>
+    </header>
+    <main class="chrono-container">
+        <h1>CHRONOMETER</h1>
+        <p><span id="hours">00</span><span>:</span><span id="minutes">00</span><span>:</span><span id="seconds">00</span></p>
+        <div class="main-buttons-container">
+            <button id="start-chrono" type="button" onclick="startChrono()">Start</button>
+            <button id="stop-chrono" type="button" onclick="stopTime()">Stop</button>
+            <button id="reset-chrono" type="button" onclick="resetTime()">Reset</button>
+        </div>
+    </main>
+    <footer>
+        <p>Developed by <a href="https://github.com/angelr08" target="_blank">Angel Ramírez</a></p>
+    </footer>
+    <script src="src/index.js"></script>
+</body>
+</html>

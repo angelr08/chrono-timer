@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 6.25%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    background: #292323;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+header a {
+    width: 45px;
+    height: 40px;
+    border: none;
+    background: transparent;
+    font-size: 14rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+header a img {
+    width: 25px;
+    height: 30px;
+    padding-top: 5px;
+}
+
+main {
+    width: 100%;
+    height: 80vh;
+}
+
+main .main-buttons-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 350px;
+}
+
+h1 {
+    font-size: 36rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+main p {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 16rem;
+}
+
+main span {
+    font-size: 36rem;
+}
+
+#start-chrono, #stop-chrono, #reset-chrono, #start-timer, #continue-timer, #stop-timer, #reset-timer {
+    width: 92px;
+    height: 31px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#start-chrono, #start-timer {
+    background: #3CE47F;
+}
+
+#start-chrono:hover, #start-timer:hover {
+    background: #43FB8C;
+}
+
+#stop-chrono, #stop-timer {
+    background: #E3453B;
+    display: none;
+}
+
+#stop-chrono:hover, #stop-timer:hover {
+    background: #F54E43;
+}
+
+#reset-chrono, #reset-timer {
+    background: #E3C430;
+}
+
+#reset-chrono:hover, #reset-timer:hover {
+    background: #F3D337;
+}
+
+form .inputs-container {
+    width: 312px;
+    height: 273px;
+    border: 1px solid #4872DC;
+    border-radius: 16px;
+    margin: 0 auto 15px auto;
+}
+
+main form p {
+    text-align: start;
+}
+
+main .inputs-container {
+    display: block;
+}
+
+main form div p {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    margin-left: 40px;
+    color: #4872DC;
+}
+
+main form label select {
+    width: 222px;
+    height: 26px;
+    margin-left: 40px;
+    border: 1px solid #4872DC;
+    outline: none;
+    border-radius: 8px;
+}
+
+footer {
+    width: 100%;
+}
+
+footer p {
+    font-size: 12rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+footer p a {
+    color: black;
+}
+
+@media (min-width: 768px) {
+    body {
+        position: relative;
+    }
+    .chrono-container {
+        position: absolute;
+        top: 300px;
+        height: 60vh;
+    }
+    footer {
+        position: absolute;
+        top: 700px;
+    }
+    
+}
